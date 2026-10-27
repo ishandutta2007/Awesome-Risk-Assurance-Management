@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C16" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+
+    <!-- Animated Glowing Border Gradient -->
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#3B82F6;#8B5CF6;#EC4899;#3B82F6" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.9">
+        <animate attributeName="stop-color" values="#8B5CF6;#EC4899;#3B82F6;#8B5CF6" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#06B6D4;#3B82F6;#8B5CF6;#06B6D4" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Radial Accent Glows -->
+    <radialGradient id="centerGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.35" />
+    </pattern>
+
+    <!-- Filter for Soft Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #FFFFFF;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      fill: #94A3B8;
+      letter-spacing: 0.2px;
+    }
+    .badge-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #E2E8F0;
+    }
+    @keyframes radarPulse {
+      0% { r: 40px; opacity: 0.6; }
+      50% { opacity: 0.25; }
+      100% { r: 240px; opacity: 0; }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-12px) translateX(8px); }
+    }
+    @keyframes floatParticleRev {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(12px) translateX(-8px); }
+    }
+    .radar-ring-1 {
+      animation: radarPulse 6s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+      transform-origin: 980px 210px;
+    }
+    .radar-ring-2 {
+      animation: radarPulse 6s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+      animation-delay: 2s;
+      transform-origin: 980px 210px;
+    }
+    .radar-ring-3 {
+      animation: radarPulse 6s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+      animation-delay: 4s;
+      transform-origin: 980px 210px;
+    }
+    .particle-1 { animation: floatParticle 5s ease-in-out infinite; }
+    .particle-2 { animation: floatParticleRev 6s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#centerGlow)" />
+  <rect width="1200" height="420" rx="16" fill="url(#grid)" />
+
+  <!-- Dynamic Animated Radar / Assurance Waves (Right Side Graphic) -->
+  <g transform="translate(0, 0)">
+    <circle cx="980" cy="210" r="140" fill="url(#orbGlow)" />
+    <circle cx="980" cy="210" r="40" fill="none" stroke="#38BDF8" stroke-width="1.5" class="radar-ring-1" />
+    <circle cx="980" cy="210" r="40" fill="none" stroke="#818CF8" stroke-width="1.5" class="radar-ring-2" />
+    <circle cx="980" cy="210" r="40" fill="none" stroke="#C084FC" stroke-width="1.5" class="radar-ring-3" />
+    <circle cx="980" cy="210" r="8" fill="#38BDF8" filter="url(#glow)">
+      <animate attributeName="r" values="7;10;7" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Shield / Assurance Central Motif inside radar -->
+    <path d="M 980 165 L 1020 185 V 225 C 1020 250 980 270 980 270 C 980 270 940 250 940 225 V 185 Z" 
+          fill="#1E293B" fill-opacity="0.65" stroke="#38BDF8" stroke-width="2.5" />
+    <path d="M 965 215 L 977 227 L 997 203" fill="none" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Dynamic Constellation / Connected Risk Nodes (Left / Floating) -->
+  <g class="particle-1" opacity="0.65">
+    <circle cx="140" cy="90" r="4" fill="#38BDF8" />
+    <circle cx="210" cy="140" r="5" fill="#818CF8" />
+    <circle cx="160" cy="200" r="3.5" fill="#C084FC" />
+    <line x1="140" y1="90" x2="210" y2="140" stroke="#475569" stroke-width="1" stroke-dasharray="3,3" />
+    <line x1="210" y1="140" x2="160" y2="200" stroke="#475569" stroke-width="1" stroke-dasharray="3,3" />
+  </g>
+  <g class="particle-2" opacity="0.5">
+    <circle cx="1080" cy="80" r="4.5" fill="#F472B6" />
+    <circle cx="1130" cy="130" r="3" fill="#38BDF8" />
+    <circle cx="1060" cy="330" r="4" fill="#34D399" />
+    <line x1="1080" y1="80" x2="1130" y2="130" stroke="#475569" stroke-width="1" stroke-dasharray="3,3" />
+  </g>
+
+  <!-- Card Frame Outer Glow Border -->
+  <rect x="2" y="2" width="1196" height="416" rx="15" fill="none" stroke="url(#borderGlow)" stroke-width="3" />
+
+  <!-- Decorative Top Banner Pill -->
+  <g transform="translate(80, 50)">
+    <rect width="270" height="32" rx="16" fill="#1E293B" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.6" />
+    <circle cx="16" cy="16" r="5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="30" y="21" class="badge-text" fill="#93C5FD">ENTERPRISE ASSURANCE ECOSYSTEM</text>
+  </g>
+
+  <!-- Foreground Title and Subtitle -->
+  <g transform="translate(80, 140)">
+    <text x="0" y="0" class="title-text">
+      Awesome Risk &amp; Assurance
+    </text>
+    <text x="0" y="52" class="title-text" fill="#60A5FA">
+      Management
+    </text>
+    <text x="0" y="105" class="subtitle-text">
+      Curated directory of SaaS platforms, open-source GRC systems, and internal audit tooling.
+    </text>
+    <text x="0" y="135" class="subtitle-text" fill="#64748B" font-size="16px">
+      Connecting 1st, 2nd &amp; 3rd lines of defense with continuous controls &amp; unified risk registers.
+    </text>
+  </g>
+
+  <!-- Interactive / Visual Tag Badges in Foreground -->
+  <g transform="translate(80, 325)">
+    <!-- Tag 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="130" height="34" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="65" y="22" class="badge-text" text-anchor="middle">🛡️ Integrated Risk</text>
+    </g>
+    <!-- Tag 2 -->
+    <g transform="translate(142, 0)">
+      <rect width="140" height="34" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="70" y="22" class="badge-text" text-anchor="middle">📋 Internal Audit</text>
+    </g>
+    <!-- Tag 3 -->
+    <g transform="translate(294, 0)">
+      <rect width="125" height="34" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="62" y="22" class="badge-text" text-anchor="middle">⚖️ GRC &amp; SOX</text>
+    </g>
+    <!-- Tag 4 -->
+    <g transform="translate(431, 0)">
+      <rect width="145" height="34" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="72" y="22" class="badge-text" text-anchor="middle">🤖 AI Governance</text>
+    </g>
+    <!-- Tag 5 -->
+    <g transform="translate(588, 0)">
+      <rect width="155" height="34" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="77" y="22" class="badge-text" text-anchor="middle">🔍 Continuous Controls</text>
+    </g>
+  </g>
+</svg>
