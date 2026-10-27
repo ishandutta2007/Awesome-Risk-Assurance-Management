@@ -86,39 +86,39 @@ Open-source tooling in Risk & Assurance Management offers organizations sovereig
 
 ### ⭐ Open-Source Projects Ranked by Community Adoption
 
-The following projects are **sorted in descending order by GitHub Star Count**. Each social star badge links directly to that repository's stargazers page:
+The following projects are **sorted in descending order by GitHub Stars_Count**. Each social Stars_Badge links directly to that repository's stargazers page:
 
-1. 🌟 **[CISO Assistant](https://github.com/intuitem/ciso-assistant-community)** [![GitHub stars](https://img.shields.io/github/stars/intuitem/ciso-assistant-community?style=social&color=white)](https://github.com/intuitem/ciso-assistant-community/stargazers)  
+1. 🌟 **[CISO Assistant](https://github.com/intuitem/ciso-assistant-community)** [![GitHub_Stars](https://img.shields.io/github/stars/intuitem/ciso-assistant-community?style=social&color=white)](https://github.com/intuitem/ciso-assistant-community/stargazers)  
    *Comprehensive one-stop-shop GRC platform for Risk Management (ISO 27005 & EBIOS RM), AppSec, Compliance & Audit, TPRM, BIA, Privacy, and automated reporting across 200+ global frameworks.*
 
-2. 🌟 **[ComplianceAsCode](https://github.com/ComplianceAsCode/content)** [![GitHub stars](https://img.shields.io/github/stars/ComplianceAsCode/content?style=social&color=white)](https://github.com/ComplianceAsCode/content/stargazers)  
+2. 🌟 **[ComplianceAsCode](https://github.com/ComplianceAsCode/content)** [![GitHub_Stars](https://img.shields.io/github/stars/ComplianceAsCode/content?style=social&color=white)](https://github.com/ComplianceAsCode/content/stargazers)  
    *The industry-standard security and compliance-as-code engine in SCAP, Ansible, Bash, and InSpec for automated continuous control evaluation, audit hardening, and regulatory verification.*
 
-3. 🌟 **[Comply](https://github.com/strongdm/comply)** [![GitHub stars](https://img.shields.io/github/stars/strongdm/comply?style=social&color=white)](https://github.com/strongdm/comply/stargazers)  
+3. 🌟 **[Comply](https://github.com/strongdm/comply)** [![GitHub_Stars](https://img.shields.io/github/stars/strongdm/comply?style=social&color=white)](https://github.com/strongdm/comply/stargazers)  
    *Developer-centric compliance automation framework focused on SOC 2; manages audit policies, procedures, and evidence collection workflows directly within Git.*
 
-4. 🌟 **[Probo](https://github.com/getprobo/probo)** [![GitHub stars](https://img.shields.io/github/stars/getprobo/probo?style=social&color=white)](https://github.com/getprobo/probo/stargazers)  
+4. 🌟 **[Probo](https://github.com/getprobo/probo)** [![GitHub_Stars](https://img.shields.io/github/stars/getprobo/probo?style=social&color=white)](https://github.com/getprobo/probo/stargazers)  
    *Self-hosted open-source GRC platform covering risk registers, control tracking, DPIA/TIA, document approval, and audit evidence chains; provides 270+ MCP tools for AI agent workflow automation.*
 
-5. 🌟 **[VerifyWise](https://github.com/verifywise-ai/verifywise)** [![GitHub stars](https://img.shields.io/github/stars/verifywise-ai/verifywise?style=social&color=white)](https://github.com/verifywise-ai/verifywise/stargazers)  
+5. 🌟 **[VerifyWise](https://github.com/verifywise-ai/verifywise)** [![GitHub_Stars](https://img.shields.io/github/stars/verifywise-ai/verifywise?style=social&color=white)](https://github.com/verifywise-ai/verifywise/stargazers)  
    *Centralized AI governance, risk assessment, and LLM evaluation platform supporting EU AI Act, ISO/IEC 42001, and NIST AI RMF with multi-framework control cross-mapping.*
 
-6. 🌟 **[OpenLane](https://github.com/theopenlane/core)** [![GitHub stars](https://img.shields.io/github/stars/theopenlane/core?style=social&color=white)](https://github.com/theopenlane/core/stargazers)  
+6. 🌟 **[OpenLane](https://github.com/theopenlane/core)** [![GitHub_Stars](https://img.shields.io/github/stars/theopenlane/core?style=social&color=white)](https://github.com/theopenlane/core/stargazers)  
    *Modern cloud-native compliance and assurance platform automating SOC 2, ISO 27001, GDPR, and NIST 800-53 evidence harvesting, policy management, and program verification.*
 
-7. 🌟 **[Heimdall 2](https://github.com/mitre/heimdall2)** [![GitHub stars](https://img.shields.io/github/stars/mitre/heimdall2?style=social&color=white)](https://github.com/mitre/heimdall2/stargazers)  
+7. 🌟 **[Heimdall 2](https://github.com/mitre/heimdall2)** [![GitHub_Stars](https://img.shields.io/github/stars/mitre/heimdall2?style=social&color=white)](https://github.com/mitre/heimdall2/stargazers)  
    *MITRE's enterprise security control visualizer; enables internal auditors and compliance teams to ingest, compare, track, and report automated security control scan results.*
 
-8. 🌟 **[Unicis Platform](https://github.com/UnicisTech/unicis-platform-ce)** [![GitHub stars](https://img.shields.io/github/stars/UnicisTech/unicis-platform-ce?style=social&color=white)](https://github.com/UnicisTech/unicis-platform-ce/stargazers)  
+8. 🌟 **[Unicis Platform](https://github.com/UnicisTech/unicis-platform-ce)** [![GitHub_Stars](https://img.shields.io/github/stars/UnicisTech/unicis-platform-ce?style=social&color=white)](https://github.com/UnicisTech/unicis-platform-ce/stargazers)  
    *All-in-one open-source GRC solution for privacy, security, and risk teams; alternative to legacy compliance suites with native ISO 27001, GDPR, SOC 2, and NIST coverage.*
 
-9. 🌟 **[SimpleRisk](https://github.com/simplerisk/code)** [![GitHub stars](https://img.shields.io/github/stars/simplerisk/code?style=social&color=white)](https://github.com/simplerisk/code/stargazers)  
+9. 🌟 **[SimpleRisk](https://github.com/simplerisk/code)** [![GitHub_Stars](https://img.shields.io/github/stars/simplerisk/code?style=social&color=white)](https://github.com/simplerisk/code/stargazers)  
    *Mature, battle-tested open-source risk management platform delivering risk identification, risk scoring, mitigation planning, review cycles, and compliance framework tracking.*
 
-10. 🌟 **[AuditSym](https://github.com/SUALBA/AuditSym)** [![GitHub stars](https://img.shields.io/github/stars/SUALBA/AuditSym?style=social&color=white)](https://github.com/SUALBA/AuditSym/stargazers)  
+10. 🌟 **[AuditSym](https://github.com/SUALBA/AuditSym)** [![GitHub_Stars](https://img.shields.io/github/stars/SUALBA/AuditSym?style=social&color=white)](https://github.com/SUALBA/AuditSym/stargazers)  
     *Offline-first local GRC platform with integrated AI remediation for NIST CSF 2.0, ISO 27001, CIS Controls v8, and COBIT audits, featuring an Impact vs. Effort remediation matrix.*
 
-11. 🌟 **[Cairn](https://github.com/frousselet/cairn)** [![GitHub stars](https://img.shields.io/github/stars/frousselet/cairn?style=social&color=white)](https://github.com/frousselet/cairn/stargazers)  
+11. 🌟 **[Cairn](https://github.com/frousselet/cairn)** [![GitHub_Stars](https://img.shields.io/github/stars/frousselet/cairn?style=social&color=white)](https://github.com/frousselet/cairn/stargazers)  
     *Self-hosted GRC platform enforcing ISO 27005 and EBIOS RM risk management with permissioned state transitions, nonconformity registers, and native REST & MCP servers.*
 
 ---
@@ -203,7 +203,7 @@ Contributions from risk professionals, internal auditors, compliance officers, a
 
 1. 🍴 **Fork** the repository: `https://github.com/ishandutta2007/Awesome-Risk-Assurance-Management`
 2. 🌿 **Create a Branch**: `git checkout -b feature/add-new-tool`
-3. 📝 **Add or Update Entries**: Follow the established tabular format for SaaS platforms or list format with social star badges for open-source tools.
+3. 📝 **Add or Update Entries**: Follow the established tabular format for SaaS platforms or list format with social Stars_Badges for open-source tools.
 4. 🔍 **Verify Data Quality**: Ensure exact starting prices, specific free tier/trial limits, and accurate links.
 5. 🚀 **Submit a Pull Request**: Provide a concise summary of the addition or revision.
 
